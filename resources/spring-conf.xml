@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	  http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean id="NewElectronicDevice" class="com.fis.spring.app.model.ElectronicDevices">
+		<constructor-arg value="123" name="power"></constructor-arg>
+		<constructor-arg value="124" name="memory"></constructor-arg>
+		<constructor-arg value="true" name="bluetooth"></constructor-arg>
+		<constructor-arg value="3" name="ratings"></constructor-arg>
+	</bean> -->
+	
+	<bean id = "NewElectronicDevice" class="com.fis.spring.app.model.ElectronicDevices" autowire="byName">
+		<property name="power" value="102"></property>
+		<property name="memory" value="103"></property>
+		<property name="bluetooth" value="true"></property>
+		<property name="ratings" value="4"></property>
+	</bean>
+	
+	<bean id = "NewElectronicDevice2" class="com.fis.spring.app.model.ElectronicDevices" autowire="byName">
+		<property name="power" value="1020"></property>
+		<property name="memory" value="1030"></property>
+		<property name="bluetooth" value="true"></property>
+		<property name="ratings" value="3"></property>
+	</bean>
+
+</beans>
+		
+	
+	
+	<!-- <bean id="carNewCar2" class="com.fis.app.model.Car" autowire="byName">
+		<property name="carName" value="Creta"></property>
+		<property name="carNumber" value="245"></property>
+	</bean>
+	
+	<bean id="e" class="com.fis.app.model.Engine">
+		<property name="engineName" value="TataEngine"></property>
+		<property name="power" value="1200"></property>
+	</bean>
+	
+	<bean id="ms" class="com.fis.app.model.MusicSystem">
+		<property name = "name" value="Poineer"/>
+	</bean>
+	
+	
+</beans> -->
+	
+	
